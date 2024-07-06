@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 600px;
+    margin: auto;
+    min-height: 100vh;
+    padding: 15px;
+}
+section .mytodo{
+    width: fit-content;
+    background-color: beige;
+}
+.finished{
+    position: relative;
+}
+.finished::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+
+.mytodo .edit{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: green;
+    color: white;
+    text-decoration: none;
+}
+a{
+    padding: 5px;
+    border-radius: 50%;
+    color: white !important;
+    text-decoration: none !important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+button.mohda{
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    background: blue !important;
+    color: white !important;
+    outline: none !important;
+    border: none !important;
+}
+.mytodo .delete{
+    padding: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: red;
+    color: white;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ahmed{
+    width: 25px;
+    height: 25px;
+    border-radius: 50% !important;
+    margin-left: 15px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#added{
+    position: sticky !important;
+    top: -10px;
+    z-index: 999 !important;
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
